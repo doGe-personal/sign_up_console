@@ -1,0 +1,6 @@
+{
+  "name": "EditableDataTable",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditableDataTable.jsx"
+}

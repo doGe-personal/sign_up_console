@@ -1,0 +1,41 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  // background-size: contain;
+  // background-position: right;
+}
+
+.main {
+  background: #e5e5e5;
+  width: 100%;
+  padding: 20px;
+  //max-height: calc(100vh - 160px);
+  //height: calc(100vh - 160px);
+
+  :global {
+    .content-inner {
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+      overflow-y: auto;
+      //width: 100%;
+      background: #fff;
+      max-height: e("calc(100vh - 180px)");
+    }
+  }
+}

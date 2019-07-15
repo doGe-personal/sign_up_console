@@ -1,0 +1,133 @@
+.page {
+  background: url("/assets/img/login-bg1.png");
+  height: 100vh;
+  background-size: cover;
+}
+
+.panel {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: -190px 0 0 -186px;
+  width: 372px;
+  height: 380px;
+  padding: 36px;
+  //border-left: 1px solid rgba(211, 211, 211, 0.55);
+  box-shadow: 0 0 100px rgba(0, 0, 0, .6);
+
+  button {
+    width: 100%;
+  }
+
+  p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  :global {
+    .has-error {
+      .ant-input {
+        border: 1px solid #f04134;
+        box-shadow: none;
+      }
+    }
+
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 50px;
+    }
+  }
+
+  input {
+    background: transparent;
+    border: 1px solid #e0e0e0;
+    //border-left: none;
+    color: #ffffff;
+
+    &:hover, &:active, &:focus {
+      //box-shadow: none;
+      //border: 1px solid @primary-color;
+      //border-left: none;
+    }
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ffffff;
+  }
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ffffff;
+  }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ffffff;
+  }
+}
+
+.logo {
+  //height: 60px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 26px;
+
+  img {
+    width: 100%;
+  }
+  h1 {
+    color: white;
+    margin: 30px 0;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.form {
+  //width: 250px;
+}
+
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.captcha {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  height: 45px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.forgetPW {
+  margin-top: 10px;
+  text-align: center;
+  a {
+    color: #ffffff;
+  }
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  color: #ffffff;
+}

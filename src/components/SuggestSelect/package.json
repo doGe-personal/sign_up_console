@@ -1,0 +1,6 @@
+{
+  "name": "SuggestSelect",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SuggestSelect.jsx"
+}
